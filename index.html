@@ -105,9 +105,14 @@
         /* PROJECTS */
 
         .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            justify-content: center;
             gap: 25px;
+        }
+        
+        .project {
+            width: 100%;
+            max-width: 750px;
         }
 
         .project {
@@ -126,6 +131,20 @@
         .project h3 {
             font-size: 25px;
             margin-bottom: 12px;
+        }
+
+        .project-images {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .project-images img {
+            width: 50%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .project p {
@@ -178,6 +197,10 @@
         .contact p {
             margin-bottom: 20px;
             color: #64748b;
+        }
+
+        .contact .button {
+            margin: 5px;
         }
 
         /* FOOTER */
@@ -291,6 +314,14 @@
 
                 <h3>Booking App</h3>
 
+                <div class="project-images">
+                    
+                    <img src="images/user.png" alt="Booking App user interface">
+                    
+                    <img src="images/admin-panel.png" alt="Booking App admin panel">
+                
+                </div>
+
                 <p>
                     A full-stack booking platform built with
                     Laravel and React, featuring real-time
@@ -347,30 +378,37 @@
     </section>
 
 
-    <!-- CONTACT -->
+   <!-- CONTACT -->
 
-    <section id="contact">
+<section id="contact">
 
-        <h2>Contact</h2>
+    <h2>Contact</h2>
 
-        <div class="contact">
+    <div class="contact">
 
-            <p>
-                Feel free to explore my projects and
-                connect with me on GitHub.
-            </p>
+        <p>
+            Feel free to explore my projects and
+            get in touch with me.
+        </p>
 
-            <a
-                class="button"
-                href="https://github.com/KonstantinosNasioudis"
-                target="_blank"
-            >
-                GitHub Profile
-            </a>
+        <a
+            class="button"
+            href="mailto:kostasnsds@gmail.com"
+        >
+            Email Me
+        </a>
 
-        </div>
+        <a
+            class="button"
+            href="https://github.com/KonstantinosNasioudis"
+            target="_blank"
+        >
+            GitHub Profile
+        </a>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- FOOTER -->
