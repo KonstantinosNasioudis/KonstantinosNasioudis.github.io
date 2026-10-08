@@ -1,26 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konstantinos Nasioudis | Portfolio</title>
+
+    <title>Konstantinos Nasioudis | Software Developer</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            background: #0f172a;
+            padding: 18px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e3a8a
+            );
+
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            color: #cbd5e1;
+        }
+
+        /* SECTIONS */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        section h2 {
+            font-size: 34px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* ABOUT */
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #475569;
+        }
+
+        /* PROJECTS */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .project h3 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .technologies {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #475569;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        /* TECHNOLOGIES */
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .tech {
+            background: white;
+            padding: 10px 16px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+            color: #64748b;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav .container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <h1>Konstantinos Nasioudis</h1>
+    <!-- NAVIGATION -->
 
-    <h2>Projects</h2>
+    <nav>
 
-    <h3>Booking App</h3>
+        <div class="container">
 
-    <p>
-        Laravel, React, Python and Machine Learning booking application.
-    </p>
+            <h2>Konstantinos Nasioudis</h2>
 
-    <a href="https://github.com/KonstantinosNasioudis/Booking-App">
-        View Booking App
-    </a>
+            <div>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#technologies">Technologies</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+        <h1>Konstantinos Nasioudis</h1>
+
+        <p>
+            Software Developer | Web Applications | AI & Machine Learning
+        </p>
+
+    </header>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am a software developer focused on building
+                modern web applications and exploring artificial
+                intelligence and machine learning technologies.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy working with Laravel, React, Python and
+                modern backend technologies to create practical
+                and scalable software solutions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+
+            <!-- BOOKING APP -->
+
+            <div class="project">
+
+                <h3>Booking App</h3>
+
+                <p>
+                    A full-stack booking platform built with
+                    Laravel and React, featuring real-time
+                    seat booking, Redis-based temporary holds,
+                    payments and machine learning demand
+                    prediction.
+                </p>
+
+                <div class="technologies">
+
+                    Laravel · PHP · React · Python · FastAPI ·
+                    Machine Learning · MySQL · Redis
+
+                </div>
+
+                <a
+                    class="button"
+                    href="https://github.com/KonstantinosNasioudis/Booking-App"
+                    target="_blank"
+                >
+                    View on GitHub
+                </a>
+
+            </div>
+
+
+            <!-- TICKETING APP -->
+
+            <div class="project">
+
+                <h3>Ticketing App</h3>
+
+                <p>
+                    A customer support and ticket management
+                    application with AI-powered assistance,
+                    ticket classification and automated
+                    support features.
+                </p>
+
+                <div class="technologies">
+
+                    Laravel · React · Inertia.js · Python · AI
+
+                </div>
+
+                <a
+                    class="button"
+                    href="#"
+                >
+                    Coming Soon
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGIES -->
+
+    <section id="technologies">
+
+        <h2>Technologies</h2>
+
+        <div class="tech-list">
+
+            <span class="tech">Laravel</span>
+            <span class="tech">PHP</span>
+            <span class="tech">React</span>
+            <span class="tech">JavaScript</span>
+            <span class="tech">Python</span>
+            <span class="tech">FastAPI</span>
+            <span class="tech">Machine Learning</span>
+            <span class="tech">MySQL</span>
+            <span class="tech">Redis</span>
+            <span class="tech">Git</span>
+            <span class="tech">GitHub</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="contact">
+
+            <p>
+                Feel free to explore my projects and
+                connect with me on GitHub.
+            </p>
+
+            <a
+                class="button"
+                href="https://github.com/KonstantinosNasioudis"
+                target="_blank"
+            >
+                GitHub Profile
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Konstantinos Nasioudis
+
+    </footer>
 
 </body>
+
 </html>
